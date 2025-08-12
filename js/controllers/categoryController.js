@@ -3,14 +3,14 @@ import{
     createCategory,
     updateCategory,
     deleteCategory
-} from "../services/categoryservices.js";
+} from "../services/categoryservice.js";
  
 document.addEventListener("DOMContentLoaded", ()=>{
-    const tableBody = document.querySelector("#categoriesTable tbody");
+const tableBody = document.querySelector("#categoriesTable tbody");
 const form = document.getElementById("categoryForm");
-const modal = new bootsrap.modal(document.getAnimations("categoryModal"));
+const modal = new bootstrap.Modal(document.getElementById("categoryModal"));
 const lblModal = document.getElementById("categoryModalLabel");
-    const btnAdd = document.getElementById("btnAddCategory");
+const btnAdd = document.getElementById("btnAddCategory");
  
 init(); //Este metodo permite cargar las categorias en la tabla
 
