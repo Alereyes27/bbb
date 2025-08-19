@@ -3,7 +3,7 @@ import{
     createCategory,
     updateCategory,
     deleteCategory
-} from "../services/categoryservice.js";
+} from "../xamp/htdocs/services/categoryservice.js";
  
 document.addEventListener("DOMContentLoaded", ()=>{
 const tableBody = document.querySelector("#categoriesTable tbody");
